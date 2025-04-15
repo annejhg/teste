@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* Barra superior */
+.top-bar {
+    background: #154926;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    position: relative;
+    margin: 0;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    unicode-bidi: isolate;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #154926;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.banner {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/Banner/suspense.jpg') no-repeat center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+header {
+    text-align: left;
+    margin: 0;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #222;
+}
+
+header p {
+    font-size: 16px;
+    color: #555;
+    max-width: 800px;
+}
+
+.livros-container h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.grid-livros {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.livro {
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 15px; /* Espaçamento entre os elementos */
+}
+
+.livro img {
+    width: 180px;  /* Largura fixa */
+    height: 250px; /* Altura fixa */
+    object-fit: cover; /* Ajusta a imagem sem distorcer */
+    border-radius: 5px;
+}
+.livro p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.autor {
+    color: #007BFF;
+    font-weight: bold;
+}
+
+body nav a{
+    text-decoration: none;
+    color: #154926;
+    font-weight: bold;
+}
+
+.lateral{
+    color: #575a5c;
+}
+
+.informação{
+    color: #555;
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}

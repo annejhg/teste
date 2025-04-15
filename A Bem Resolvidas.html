@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros</title>
+    <link rel="stylesheet" href="Padrçãodoslivros.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+</head>
+<div class="top-bar">Cada livro é uma nova porta para o conhecimento. Leia e descubra mundos incríveis!</div>
+<nav>
+    <div class="logo">Carti</div>
+   <div class="menu">
+    <ul>
+        <li><a href="/Paginainicial.html">Início</a></li>
+        <li><a href="/categorias.html">Categorias</a></li>
+        <li><a href="/como doar.html">Como Doar?</a></li>
+        <li><a href="/sobre projeto.html">Sobre o Projeto</a></li>
+    </ul>
+    </div>
+    </div>
+</nav>
+</header>
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <div class="book-left">
+            <img src="/fotos/As bem resolvidas.png">
+        </div>
+
+        <div class="book-right">
+            <h1>As Bem Resolvidas(?)</h1>
+            <p class="author">Por <span>Luis Eduardo Matta</span></p>
+
+            <div class="synopsis">
+                <h3>Sinopse</h3>
+                <p>Chris, Alê e Isa são bonitas, ricas e populares, além de amigas inseparáveis. Vivem a vida que todas gostariam de ter: estudam na melhor escola da cidade, frequentam lugares badalados e vestem as mais desejadas roupas. Tudo parece perfeito. Isa conhece Rogério, o novato da escola, e logo se encanta por ele. Alê só tem olhos para PH, seu namorado sem noção, e Chris, coitada, é colocada no meio de toda essa confusão. Para complicar tudo, Bu Campello, a patricinha mais implicante do mundo, não medirá esforços para sabotar a vida social das 'amigas'. De confusões com namorados a festas sofisticadas e bailes funks, acompanhe a rotina dessas garotas incríveis que fazem de tudo para conseguir o que querem. Mas será que elas sempre conseguem? Se delicie com essa divertida história cheia de intrigas, dramas, vinganças, romances, inveja, conquistas e claro, muita badalação.E aí, preparada para entrar no mundo das bem resolvidas?</p>
+            </div>
+
+            <h2>Dados do Livro</h2>
+            <table>
+                <tr>
+                    <th>Autor(a):</th>
+                    <td>Luis Eduardo Matta</td>
+                </tr>
+                <tr>
+                    <th>Data de Publição</th>
+                    <td>2011</td>
+                </tr>
+                <tr>
+                    <th>Nº de Páginas:</th>
+                    <td>195</td>
+                </tr>
+                <tr>
+                    <th>N° de Exemplares:</th>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>Categoria:</th>
+                    <td>Infantojuvenil</td>
+            </table>
+        </div>
+    </div>
+<div class="voltar">
+    <a href="/categorias.html"> ↩️ </a>
+</div>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Sobre nós</h3>
+                <p>Acreditamos no poder transformador da leitura! <br>
+                    Nosso objetivo é garantir que mais alunos tenham acesso a livros e <br>
+                    incentivando o hábito da leitura e ampliando suas oportunidades de aprendizado. <br>
+                    Fazemos isso por meio de doações de livros.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Email: contato@carti.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes sociais</h3>
+                <p><a href="https://www.instagram.com/carti.iff/?hl=pt-br"> 📷 Instagram</a></p>
+            </div>
+        </div>
+        <p class="copyright">© 2025 Carti - Todos os direitos reservados.</p>
+    </footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

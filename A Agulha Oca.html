@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros</title>
+    <link rel="stylesheet" href="Padrçãodoslivros.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+</head>
+<div class="top-bar">Cada livro é uma nova porta para o conhecimento. Leia e descubra mundos incríveis!</div>
+<nav>
+    <div class="logo">Carti</div>
+   <div class="menu">
+    <ul>
+        <li><a href="/Paginainicial.html">Início</a></li>
+        <li><a href="/categorias.html">Categorias</a></li>
+        <li><a href="/como doar.html">Como Doar?</a></li>
+        <li><a href="/sobre projeto.html">Sobre o Projeto</a></li>
+    </ul>
+    </div>
+    </div>
+</nav>
+</header>
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <div class="book-left">
+            <img src="/fotos/Arséne Lupin - A Agulha Oca - Maurice Leblanc.jpg">
+        </div>
+
+        <div class="book-right">
+            <h1>A Agulha Oca</h1>
+            <p class="author">Por <span>Maurice Leblanc</span></p>
+
+            <div class="synopsis">
+                <h3>Sinopse</h3>
+                <p>Arsène Lupin, o maior ladrão de todos os tempos, está prestes a enfrentar um desafio que pode comprometer sua reputação. A Agulha Oca, um lendário esconderijo supostamente ligado a um segredo dos reis da França, se torna o alvo de Lupin e de seu mais recente adversário, Isidore Beautrelet. Beautrelet, um jovem estudante com uma mente brilhante, começa a seguir os passos de Lupin, tentando impedir que ele ponha as mãos no mistério da Agulha Oca. O duelo intelectual entre os dois se desenrola em um jogo de gato e rato cheio de reviravoltas, pistas enigmáticas e descobertas surpreendentes.</p>
+            </div>
+
+            <h2>Dados do Livro</h2>
+            <table>
+                <tr>
+                    <th>Autor(a):</th>
+                    <td>Maurice Leblanc</td>
+                </tr>
+                <tr>
+                    <th>Data de Publição</th>
+                    <td>1909</td>
+                </tr>
+                <tr>
+                    <th>Nº de Páginas:</th>
+                    <td>240</td>
+                </tr>
+                <tr>
+                    <th>N° de Exemplares:</th>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>Categoria:</th>
+                    <td>Mistério e romance </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+<div class="voltar">
+    <a href="/categorias.html"> ↩️ </a>
+</div>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Sobre nós</h3>
+                <p>Acreditamos no poder transformador da leitura! <br>
+                    Nosso objetivo é garantir que mais alunos tenham acesso a livros e <br>
+                    incentivando o hábito da leitura e ampliando suas oportunidades de aprendizado. <br>
+                    Fazemos isso por meio de doações de livros.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Email: contato@carti.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes sociais</h3>
+                <p><a href="https://www.instagram.com/carti.iff/?hl=pt-br"> 📷 Instagram</a></p>
+            </div>
+        </div>
+        <p class="copyright">© 2025 Carti - Todos os direitos reservados.</p>
+    </footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
